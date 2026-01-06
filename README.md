@@ -55,7 +55,7 @@ Ensure you have the following ready before using this project:
 Run the chatbot using the command below:
 
 ```bash
-python chatbot.py
+python app.py
 ```
 
 Follow the on-screen prompts to start chatting. 💬
