@@ -1,101 +1,102 @@
-# 🤖 OpenAI CLI Chatbot 🚀
+# OpenAI CLI Chatbot
 
-Welcome to the **OpenAI CLI Chatbot** repository! This project enables you to interact with OpenAI's powerful GPT models directly from your terminal, providing an efficient and lightweight tool for conversational AI enthusiasts. 🎉
+A lightweight Python CLI chatbot that lets you chat with OpenAI models from your terminal in an interactive conversation loop (default: **GPT-3.5 Turbo**).
 
----
+## Features
 
-## 🌟 Features
+- **Interactive terminal chat** with a simple conversational loop
+- **OpenAI API integration** for high-quality responses
+- **Configurable behavior** (model, temperature, max tokens) via `config.json`
+- **Minimal setup** and easy to run locally
 
-✨ **Interactive CLI**: Engage in real-time conversations with the chatbot via the terminal.
+## Requirements
 
-✨ **Customizable Personality**: Tweak the chatbot's behavior and personality via configurable settings.
+- **Python 3.7+**
+- An **OpenAI API key**
 
-✨ **Lightweight**: Minimal dependencies make it fast and efficient.
+## Installation
 
-✨ **Seamless OpenAI Integration**: Easily connects to OpenAI's GPT API for response generation.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/Achintha-999/openai-cli-chatbot.git
+   cd openai-cli-chatbot
+   ```
 
----
+2. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-## 🛠️ Prerequisites
+3. **Set your OpenAI API key**
 
-Ensure you have the following ready before using this project:
+   macOS / Linux:
+   ```bash
+   export OPENAI_API_KEY="your_api_key_here"
+   ```
 
-- 🐍 **Python 3.7 or higher**
-- 🔑 **OpenAI API Key** (Sign up at [OpenAI](https://platform.openai.com/signup/))
+   Windows (PowerShell):
+   ```powershell
+   setx OPENAI_API_KEY "your_api_key_here"
+   ```
 
----
+   Note: After using `setx`, restart your terminal so the environment variable is available.
 
-## 📥 Installation
+## Usage
 
-1. **Clone the repository:**
-
-    ```bash
-    git clone https://github.com/Achintha-999/openai-cli-chatbot.git
-    cd openai-cli-chatbot
-    ```
-
-2. **Install dependencies:**
-
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. **Set up your OpenAI API key:**
-
-    ```bash
-    export OPENAI_API_KEY=your_api_key_here
-    ```
-
-    Replace `your_api_key_here` with your actual OpenAI API key.
-
----
-
-## 🚀 Usage
-
-Run the chatbot using the command below:
+Run the chatbot:
 
 ```bash
 python app.py
 ```
 
-Follow the on-screen prompts to start chatting. 💬
+Then type your messages and press **Enter** to receive responses.
 
----
+To exit the chat, use `Ctrl+C` (or follow any on-screen exit prompt if implemented in the script).
 
-## ⚙️ Configuration
+## Configuration
 
-You can personalize the chatbot's behavior by editing the `config.json` file:
-- Adjust the **model**
-- Set the **temperature**
-- Define the **maximum token limit**
+You can customize chatbot settings in `config.json`, for example:
 
----
+- **model**: the OpenAI model name to use  
+- **temperature**: creativity level (higher = more creative)
+- **max_tokens**: maximum length of responses
 
-## 🤝 Contributing
+If you change `config.json`, re-run `python app.py` to apply changes.
 
-We 💖 contributions! If you'd like to:
+## Troubleshooting
 
-- 🛠 Improve features
-- 🐞 Fix bugs
-- 🌟 Suggest new ideas
+### `OPENAI_API_KEY` not found
+Make sure the environment variable is set and available in your current terminal session:
 
-Feel free to fork the repository and submit a pull request. Contributions are warmly appreciated! 🙌
+```bash
+echo $OPENAI_API_KEY
+```
 
----
+If it prints nothing, set it again (see Installation step 3) and restart the terminal if needed.
 
-## 📜 License
+### Dependency / Python version issues
+Confirm your Python version:
 
-Licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```bash
+python --version
+```
 
----
+If you have multiple Python versions installed, you may need to use `python3` and `pip3`.
 
-## 💡 Acknowledgments
+## Contributing
 
-🎓 **Thanks to:**
+Contributions are welcome.
 
-- [OpenAI](https://openai.com/) for GPT models and API.
-- The open-source community for inspiration and tools.
+1. Fork the repo
+2. Create a feature branch
+3. Commit your changes
+4. Open a pull request
 
----
+## License
 
-🚀 **Explore, contribute, and enjoy chatting with this CLI bot!** 👩‍💻👨‍💻
+MIT — see [LICENSE](LICENSE).
+
+## Acknowledgments
+
+- [OpenAI](https://openai.com/) for the models and API
+- The open-source community for inspiration and tooling
