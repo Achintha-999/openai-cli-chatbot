@@ -1,47 +1,85 @@
-# OpenAI CLI Chatbot
+# 🤖 OpenAI CLI Chatbot 🚀
 
-A lightweight Python CLI chatbot that lets you chat with OpenAI models from your terminal in an interactive conversation loop (default: **GPT-3.5 Turbo**).
+<div align="center">
 
-## Features
+**A lightweight Python CLI chatbot powered by OpenAI (default: GPT‑3.5 Turbo).**  
+Chat with an AI directly from your terminal in a simple interactive loop.
 
-- **Interactive terminal chat** with a simple conversational loop
-- **OpenAI API integration** for high-quality responses
-- **Configurable behavior** (model, temperature, max tokens) via `config.json`
-- **Minimal setup** and easy to run locally
+---
 
-## Requirements
+### ✨ Fast • 🧠 Smart • 🧩 Configurable • 🖥️ Terminal-first
 
-- **Python 3.7+**
-- An **OpenAI API key**
+</div>
 
-## Installation
+---
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Achintha-999/openai-cli-chatbot.git
-   cd openai-cli-chatbot
-   ```
+## 📌 Overview
 
-2. **Install dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+The **OpenAI CLI Chatbot** is a simple, terminal-based chatbot written in **Python**.  
+It connects to OpenAI’s API to generate responses, allowing you to hold a continuous conversation from the command line.
 
-3. **Set your OpenAI API key**
+---
 
-   macOS / Linux:
-   ```bash
-   export OPENAI_API_KEY="your_api_key_here"
-   ```
+## 🌟 Highlights
 
-   Windows (PowerShell):
-   ```powershell
-   setx OPENAI_API_KEY "your_api_key_here"
-   ```
+- 💬 **Interactive CLI chat** (conversation loop)
+- 🔌 **OpenAI API integration** for high-quality responses
+- 🛠️ **Configurable settings** via `config.json` (model, temperature, max tokens)
+- 🐍 **Pure Python** and easy to run locally
+- 🧼 **Minimal setup** (install deps → set API key → run)
 
-   Note: After using `setx`, restart your terminal so the environment variable is available.
+---
 
-## Usage
+## 🧰 Tech Stack
+
+- 🐍 **Python** (3.7+)
+- 🤝 **OpenAI API**
+- 📄 Config via **JSON** (`config.json`)
+
+---
+
+## ✅ Prerequisites
+
+Before you start, make sure you have:
+
+- 🐍 **Python 3.7 or higher**
+- 🔑 An **OpenAI API key**  
+  Create one at: https://platform.openai.com/
+
+---
+
+## 📥 Installation
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/Achintha-999/openai-cli-chatbot.git
+cd openai-cli-chatbot
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 3️⃣ Set your OpenAI API key
+
+#### macOS / Linux (bash/zsh)
+```bash
+export OPENAI_API_KEY="your_api_key_here"
+```
+
+#### Windows (PowerShell)
+```powershell
+setx OPENAI_API_KEY "your_api_key_here"
+```
+
+> 📝 Note (Windows): After running `setx`, **restart your terminal** so the variable is available.
+
+---
+
+## 🚀 Quick Start
 
 Run the chatbot:
 
@@ -49,54 +87,93 @@ Run the chatbot:
 python app.py
 ```
 
-Then type your messages and press **Enter** to receive responses.
+Then type your message and press **Enter**.  
+To stop the program, use **Ctrl + C** (or follow any built-in exit prompt if your script provides one).
 
-To exit the chat, use `Ctrl+C` (or follow any on-screen exit prompt if implemented in the script).
+---
 
-## Configuration
+## ⚙️ Configuration
 
-You can customize chatbot settings in `config.json`, for example:
+You can customize the chatbot by editing **`config.json`**:
 
-- **model**: the OpenAI model name to use  
-- **temperature**: creativity level (higher = more creative)
-- **max_tokens**: maximum length of responses
+- 🧠 **model** — Choose the model name (default: GPT‑3.5 Turbo)
+- 🎛️ **temperature** — Controls creativity (higher = more creative)
+- 📏 **max_tokens** — Controls max response length
 
-If you change `config.json`, re-run `python app.py` to apply changes.
+> 🔁 After editing `config.json`, re-run `python app.py` to apply changes.
 
-## Troubleshooting
+---
 
-### `OPENAI_API_KEY` not found
-Make sure the environment variable is set and available in your current terminal session:
+## 🧪 Example Session (CLI)
+
+```text
+You: Hello!
+Bot: Hi! How can I help you today?
+```
+
+---
+
+## 🛡️ Troubleshooting
+
+### 🔑 `OPENAI_API_KEY` not found
+
+Check whether your key is available in the current terminal session:
 
 ```bash
 echo $OPENAI_API_KEY
 ```
 
-If it prints nothing, set it again (see Installation step 3) and restart the terminal if needed.
+If nothing appears, set it again (see installation step 3).
 
-### Dependency / Python version issues
-Confirm your Python version:
+---
+
+### 🐍 Python / pip mismatch
+
+If your machine uses `python3` and `pip3`, try:
 
 ```bash
-python --version
+python3 --version
+pip3 install -r requirements.txt
+python3 app.py
 ```
 
-If you have multiple Python versions installed, you may need to use `python3` and `pip3`.
+---
 
-## Contributing
+## 🗺️ Roadmap (Ideas)
 
-Contributions are welcome.
+- 🧾 Save chat history to a file
+- 🧠 System prompt / persona selector
+- 🧰 CLI arguments (model, temperature, max tokens)
+- 🌐 Support for multiple providers (optional)
 
-1. Fork the repo
-2. Create a feature branch
-3. Commit your changes
-4. Open a pull request
+---
 
-## License
+## 🤝 Contributing
 
-MIT — see [LICENSE](LICENSE).
+Contributions are welcome and appreciated! 🙌
 
-## Acknowledgments
+1. 🍴 Fork the repo  
+2. 🌿 Create a branch (`feature/my-change`)  
+3. ✅ Commit your changes  
+4. 🔁 Open a Pull Request  
 
-- [OpenAI](https://openai.com/) for the models and API
-- The open-source community for inspiration and tooling
+---
+
+## 📜 License
+
+🪪 MIT License — see [LICENSE](LICENSE)
+
+---
+
+## 💡 Acknowledgments
+
+- 🤖 [OpenAI](https://openai.com/) for the models and API
+- 🌍 The open-source community for tools and inspiration
+
+---
+
+<div align="center">
+
+⭐ If you like this project, consider starring the repository!
+
+</div>
